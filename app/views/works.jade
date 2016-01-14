@@ -1,0 +1,29 @@
+extends layout
+
+block content
+  .container
+    .header
+      .header_logo
+        a(href="/")
+          img(src="/img/header_logo.svg")
+      .header_menu
+        a(href="/about") about
+        | /
+        a(href="/works", class="header_selected") works
+        | /
+        a(href="/blog") blog
+    .main
+      .uk-grid
+        .uk-width-large-1-3.works_grid
+          a(href="/works/shikaku")
+            img(src="/img/shikaku.png")
+        .uk-width-large-1-3.works_grid
+          a(href="/works/korographic")
+            img(src="/img/korographic.png")
+        .uk-width-large-1-3.works_grid
+          a(href="/works/sugoi_instagram")
+            img(src="/img/sugoi_instagram.png")
+      .uk-grid
+        .uk-width-large-1-3.works_grid
+          a(href="/works/ooparts")
+            img(src="/img/ooparts_logo.png")

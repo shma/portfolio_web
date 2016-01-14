@@ -1,0 +1,41 @@
+extends layout
+
+block content
+  .container
+    .header
+      .header_logo
+        a(href="/")
+          img(src="/img/header_logo.svg")
+      .header_menu
+        a(href="/about", class="header_selected") about
+        | /
+        a(href="/works") works
+        | /
+        a(href="/blog") blog
+    .main
+      .about_name Shunya Matsuno
+      | Web Developer
+      br
+      h2.about_head Accounts
+      .menu
+        a(href="https://github.com/shma") Github
+        |  /
+        a(href="https://twitter.com/_shma_") Twitter
+        |  /
+        a(href="https://www.facebook.com/shunya.matsuno") Facebook
+        |  /
+        a(href="http://websta.me/n/shmatsu") Instagram
+      h2.about_head Career
+      ul.career
+        li 2011 - 2013 Rakuten, Inc - DU Japan Mall Group Engineer
+        li 2013 - 2015 Tongpoo inc - CTO
+        li 2014 -      A-fis - Lead Engineer
+        li 2015 -      IAMAS
+      h2.about_head Skills
+      ul.skill
+        li HTML / CSS / Javascript
+        li PHP
+        li Nodejs
+        li Openframeworks
+      h2.about_head Contact
+      .contact_mail id.shma(at)gmail.com

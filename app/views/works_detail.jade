@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  .container
+    .header
+      .header_logo
+        a(href="/")
+          img(src="/img/header_logo.svg")
+      .header_menu
+        a(href="/about") about
+        | /
+        a(href="/works", class="header_selected") works
+        | /
+        a(href="/blog") blog
+    .main
+      h1.works_title= works_title
+      block desc_content
