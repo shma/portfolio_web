@@ -77,3 +77,14 @@ router.get('/works/shikaku', function (req, res, next) {
       //works_desc: 'aaa br'
     });
 });
+
+router.get('/works/fxsounds', function (req, res, next) {
+    res.render('fxsounds', {
+      title: 'Shunya Matsuno | Works - FXSOUNDS',
+      works_title: 'FXSOUNDS',
+      works_img: '/img/fxsounds_works.png',
+      og_type: 'article'
+      //works_img: '/img/ooparts.png',
+      //works_desc: 'aaa br'
+    });
+});
